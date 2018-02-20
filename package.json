@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-		"precommit": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "npm run lint",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js"
   },
   "keywords": [],
   "author": "Erni Souza <erni.augusto@gmail.com> (https://github.com/sistemaon)",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.1.2",
     "eslint": "^4.18.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^5.0.1"
   }
 }
